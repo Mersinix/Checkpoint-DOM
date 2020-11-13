@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" region="en">
+    <head>
+
+        <link rel="shortcut icon" href="./img/venum-logo.png" type="image/x-icon">
+        <title>UFC-Shopping-Card</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <meta charset="utf-8"/>
+        <script src="./js/main.js"></script>
+        <script>console.log(document);</script>
+    </head>
+    <body id="" class="big-container">
+        
+        <header id="top-of-the-page" class="header-big-container">
+            <nav class="header-navbar">
+                <DIV class="header-left">
+                    <div>
+                        <a href="#">
+                            <img class="venum-logo" src="./img/venum-fix-1.jpg" alt="venum-logo"/>
+                        </a>
+                    </div>
+                    <div>
+                        <h1><i>UFC-SHOPPING-CARD</i></h1>
+                    </div>
+                </DIV>
+                <div>
+                        <fieldset id="search-container" action="#" method="post">
+                        <input type="text" class="search" name="search" value="Search / Rechercher..." onfocus="if(this.value=='Search / Rechercher...')this.value=''" onblur="if(this.value=='')this.value='Search / Rechercher...'" autocomplete="off"/>
+                        </fieldset>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container-main">
+            <div class="article-sum">
+                <h2>Phone Number: +00 9999 9999</h2>
+                <h2>Customer Service: +00 9999 0000</h2>
+            </div>
+
+
+        <div class="article01">
+            <div class="article1">
+                <img class="venum-A1" src="./img/venum-b1.jpg" alt="venum-gun"/>
+                <div class="article1-right">
+                    <h3> Muay-Thai-Fight Shorts for Men </h3>
+                    <span>Price:$ <input id="price" type="text" placeholder="Total!" value="20.99" readonly disabled/>+ free-Shipping</span>
+                    <div class="plus-moins">       
+                        <a href="#">
+                          <button class="button-plus" onclick="increment()">+</button>
+                        </a> 
+                        
+                          <input id="plus-moins-number" type="number"  min=0 max=100 placeholder="Quantity!" required="required" value="0"/> peace.
+                          <a href="#">
+                            <button class="button-moins" onclick="decrement()">-</button>
+                          </a>   
+                    </div>
+                    <input id="plus-moins-sub" type="text" placeholder="Subtotal!" readonly disabled value="0"/>
+                </div>
+            </div>
+            <div class="like-out-1">
+                <div class="out"><button class="removeBtn" onclick="remov()">X</button></div>
+                <div class="like"> <img class="venum-fix-1" src="./img/venum-fix-1.jpg" alt="venum-gun"/></div>
+            </div>
+        </div>
+
+        <div class="article02">
+            <div class="article2">
+                <img class="venum-A2" src="./img/venum-gun-2.jpg" alt="venum-gun"/>
+                <div class="article2-right">
+                    <h3>Muay-Thai-RDX Gants de Boxe Kickboxing  </h3>
+                    <span>Price:$ <input id="price" type="text" placeholder="Total!" value="25.99" readonly disabled/>+ free-Shipping</span>
+                    <div class="plus-moins">       
+                        <a href="#">
+                          <button class="button-plus-2" onclick="increment2()">+</button>
+                        </a> 
+                        
+                          <input id="plus-moins-number-2" type="number"  min=0 max=100 placeholder="Quantity!" required="required" value="0"/> peace.  
+                          <a href="#">
+                            <button class="button-moins-2" onclick="decrement2()">-</button>
+                          </a> 
+                    </div>
+                    <input id="plus-moins-sub" type="text" placeholder="Subtotal!" readonly disabled value="0"/>
+                </div>
+               
+            </div>
+            <div class="like-out-2">
+                <div class="out"><button class="removeBtn" onclick="remov()">X</button></div>
+                <div class="like"> <img class="venum-fix-1" src="./img/venum-fix-1.jpg" alt="venum-gun"/> </div>
+            </div>
+        </div>
+
+        <div class="article03">
+            <div class="article3">
+                    <img class="venum-A3" src="./img/venum.jpg" alt="venum-gun"/>
+                    <div class="article3-right">
+                        <h3> Muay-Thai-Tshirt Venum for Men </h3>
+                        <span>Price:$ <input id="price" type="text" placeholder="Total!" value="29.99" readonly disabled/>+ free-Shipping</span>
+                        <div class="plus-moins">       
+                            <a href="#">
+                            <button class="button-plus-3" onclick="increment3()">+</button>
+                            </a> 
+                            
+                            <input id="plus-moins-number-3" type="number"  min=0 max=100 placeholder="Quantity!" required="required" value="0"/> peace.  
+                            <a href="#">
+                                <button class="button-moins-3" onclick="decrement3()">-</button>
+                            </a> 
+                        </div>
+                        <input id="plus-moins-sub" type="text" placeholder="Subtotal!" readonly disabled value="0"/>
+                    </div>
+                    
+             </div>
+                <div class="like-out-3">
+                    <div class="out"><button class="removeBtn" onclick="remov()">X</button></div>
+                    <div class="like"> <img class="venum-fix-1" src="./img/venum-fix-1.jpg" alt="venum-gun"/></div>
+                </div>
+        </div>
+            
+            <div class="article-sum2">
+                    <h2>Subtotal (2 items): $316.00</h2>
+            </div>
+
+        </main>
+
+        <CENTER>
+        <footer class="container-footer">
+            <div class="footer-content">
+                <h2>UFC-SHOP</h2>
+                <a href="#top-of-the-page"> <input type="button" value="Back to Top"></a>
+                <div>Copiright &copy; Gravenilevec 2020-2021</div>
+            </div>
+            <div class="container-fixed">
+                <a href="#">
+                <img class="venum-A1" src="./img/venum-fix-1.jpg" alt="venum-gun"/>
+            </a>
+            </div>
+        </footer>
+    </CENTER>
+    
+    </body>
+
+</html>
